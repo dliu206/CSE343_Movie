@@ -11,9 +11,6 @@ MovieDB::MovieDB() {
     this->dramaRoot = nullptr;
     this->classicRoot = nullptr;
 }
-MovieDB::MovieDB(const MovieDB &M) {
-
-}
 
 MovieDB::~MovieDB() {
     deleteHelper(funnyRoot);
@@ -81,7 +78,7 @@ void MovieDB::insertHelper(MovieHeadNode *curr, MovieHeadNode *target) {
 }
 
 void MovieDB::display() const {
-    cout << "Funny Root: " << endl;
+    cout << "Comedy Root: " << endl;
     displayHelper(this->funnyRoot);
     cout << endl;
     cout << "Drama Root: " << endl;

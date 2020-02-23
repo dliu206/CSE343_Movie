@@ -5,6 +5,10 @@ CMakeFiles/ASS4.dir/ClassicNode.cpp.obj
  C:/Users/david/CLionProjects/ASS4/ClassicNode.cpp
  C:/Users/david/CLionProjects/ASS4/ClassicNode.h
  C:/Users/david/CLionProjects/ASS4/MovieNode.h
+CMakeFiles/ASS4.dir/HashTable.cpp.obj
+ C:/Users/david/CLionProjects/ASS4/HashTable.cpp
+ C:/Users/david/CLionProjects/ASS4/HashTable.h
+ C:/Users/david/CLionProjects/ASS4/User.h
 CMakeFiles/ASS4.dir/MovieDB.cpp.obj
  C:/Users/david/CLionProjects/ASS4/ClassicNode.h
  C:/Users/david/CLionProjects/ASS4/MovieDB.cpp
@@ -20,9 +24,14 @@ CMakeFiles/ASS4.dir/MovieNode.cpp.obj
  C:/Users/david/CLionProjects/ASS4/ClassicNode.h
  C:/Users/david/CLionProjects/ASS4/MovieNode.cpp
  C:/Users/david/CLionProjects/ASS4/MovieNode.h
+CMakeFiles/ASS4.dir/User.cpp.obj
+ C:/Users/david/CLionProjects/ASS4/User.cpp
+ C:/Users/david/CLionProjects/ASS4/User.h
 CMakeFiles/ASS4.dir/main.cpp.obj
  C:/Users/david/CLionProjects/ASS4/ClassicNode.h
+ C:/Users/david/CLionProjects/ASS4/HashTable.h
  C:/Users/david/CLionProjects/ASS4/MovieDB.h
  C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
  C:/Users/david/CLionProjects/ASS4/MovieNode.h
+ C:/Users/david/CLionProjects/ASS4/User.h
  C:/Users/david/CLionProjects/ASS4/main.cpp

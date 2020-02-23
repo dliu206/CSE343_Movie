@@ -4,15 +4,18 @@
 #include "MovieDB.h"
 #include <fstream>
 #include <unordered_map>
+#include "User.h"
+#include "HashTable.h"
 using namespace std;
 
-unordered_map<int, string> buildUserDB() {
-    unordered_map<int, string> umap;
+HashTable buildUserDB() {
+    HashTable table;
+//    unordered_map<int, User> umap;
     ifstream infile("data4customers.txt");
 
     if (!infile) {
         cout << "Customer file couldn't be opened" << endl;
-        return umap;
+        return table;
     }
     string s;
     for (;;) {
@@ -23,25 +26,58 @@ unordered_map<int, string> buildUserDB() {
         int index = s.find(" ");
         int id = stoi(s.substr(0, index));
         string name = s.substr(index + 1, s.length());
-        // not found
-        if (umap.find(id) != umap.end()) {
+        // found
+        if (table.containsKey(id)) {
             cout << "Duplicate customer ID: " << id << endl;
         } else {
-            umap[id] = name;
+            table.put(id, name, "");
         }
-
         if (infile.eof()) {
             break;
         }
     }
+    return table;
 
-    return umap;
+//    unordered_map<int, User> umap;
+//    ifstream infile("data4customers.txt");
+//
+//    if (!infile) {
+//        cout << "Customer file couldn't be opened" << endl;
+//        return umap;
+//    }
+//    string s;
+//    for (;;) {
+//        getline(infile, s);
+//        if (s.length() == 0) {
+//            break;
+//        }
+//        int index = s.find(" ");
+//        int id = stoi(s.substr(0, index));
+//        string name = s.substr(index + 1, s.length());
+//        // found
+//        if (umap.find(id) != umap.end()) {
+//            cout << "Duplicate customer ID: " << id << endl;
+//        } else {
+//            User u(name);
+//            umap[id] = u;
+//        }
+//
+//        if (infile.eof()) {
+//            break;
+//        }
+//    }
+//
+//    return umap;
 }
 
 void displayUserDB(unordered_map<int, string> umap) {
-    unordered_map<int, string> :: iterator itr;
-    for (itr = umap.begin(); itr != umap.end(); itr++) {
-        cout << itr->first << " " << itr->second << endl;
+//    unordered_map<int, string> :: iterator itr;
+//    for (itr = umap.begin(); itr != umap.end(); itr++) {
+//        cout << itr->first << " " << itr->second << endl;
+//    }
+
+    for (auto temp: umap) {
+        cout << temp.first << " " << temp.second << endl;
     }
 }
 
@@ -110,32 +146,59 @@ int main() {
     }
     movieDb.display();
 
-    unordered_map<int, string> umap = buildUserDB();
+    HashTable table = buildUserDB();
+    table.display();
+//    unordered_map<int, User> umap = buildUserDB();
 //    displayUserDB(umap);
 
-    ifstream infile2("data4commands");
-    for(;;) {
-        getline(infile2, s);
-        if (s.length() == 0) {
-            break;
-        }
-//        int index = s.find(" ");
-        string op = s.substr(0, 1);
-        if (op == "I") {
-
-        } else if (op == "H") {
-
-        } else if (op == "B") {
-
-        } else if (op == "R") {
-
-        } else {
-            cout << "Incorrect command" << endl;
-        }
-        if (infile2.eof()) {
-            break;
-        }
-    }
+//    ifstream infile2("data4commands");
+//    for(;;) {
+//        getline(infile2, s);
+//        if (s.length() == 0) {
+//            break;
+//        }
+////        int index = s.find(" ");
+//        string op = s.substr(0, 1);
+//        if (op == "I") {
+//            movieDb.display();
+//        } else if (op == "H") {
+//            int id = stoi(s.substr(2, s.length()));
+//            if (umap.find(id) != umap.end()) {
+//                cout << umap.at(id) << endl;
+//            } else {
+//                // not found
+//                cout << "User Does Not Exist" << endl;
+//            }
+//        } else if (op == "B") {
+//            s = s.substr(2, s.length());
+//            int index = s.find(" ");
+//            int id = stoi(s.substr(0, index));
+//            s = s.substr(index + 1, s.length());
+//            string dvd = s.substr(0, 1);
+//            if (dvd != "D") {
+//                // error
+//                umap.at(id).insertHistory("Failed attempt to borrow: " + dvd);
+//            } else {
+//                string type = s.substr(2, 1);
+//                if (type == "C") {
+//                    // 2 length date
+//                    // major actor
+//                } else if (type == "D") {
+//                    //comma separated director then title
+//                } else if (type == "F") {
+//                    // comma separated title then year
+//                }
+//            }
+//
+//        } else if (op == "R") {
+//
+//        } else {
+//            cout << "Incorrect command" << endl;
+//        }
+//        if (infile2.eof()) {
+//            break;
+//        }
+//    }
 
 
     return 0;

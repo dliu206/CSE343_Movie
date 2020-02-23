@@ -9,13 +9,21 @@
 using namespace std;
 
 class User {
+    friend ostream &operator<<(ostream &Out, const User &U);
 public:
+    User();
+    User(string name);
+    ~User();
     string name;
     struct Node {
+        Node(string data);
         string data;
         Node* next;
     };
     Node* head;
+    Node* back;
+
+    void insertHistory(string s);
 
 };
 

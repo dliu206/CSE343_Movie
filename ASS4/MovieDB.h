@@ -10,7 +10,6 @@ class MovieDB {
     friend ostream &operator<<(ostream &Out, const MovieDB &M);
 public:
     MovieDB();
-    MovieDB(const MovieDB &M);
     ~MovieDB();
 
     MovieHeadNode* funnyRoot;

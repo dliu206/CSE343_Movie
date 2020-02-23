@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "ASS4.lib"
   "ASS4.pdb"
   "CMakeFiles/ASS4.dir/ClassicNode.cpp.obj"
+  "CMakeFiles/ASS4.dir/HashTable.cpp.obj"
   "CMakeFiles/ASS4.dir/MovieDB.cpp.obj"
   "CMakeFiles/ASS4.dir/MovieHeadNode.cpp.obj"
   "CMakeFiles/ASS4.dir/MovieNode.cpp.obj"

@@ -86,6 +86,12 @@
 		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.h">
 			<Option target="ASS4"/>
 		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.h">
+			<Option target="ASS4"/>
+		</Unit>
 		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieDB.cpp">
 			<Option target="ASS4"/>
 		</Unit>

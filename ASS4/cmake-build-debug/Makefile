@@ -151,6 +151,33 @@ ClassicNode.cpp.s:
 	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\ClassicNode.cpp.s
 .PHONY : ClassicNode.cpp.s
 
+HashTable.obj: HashTable.cpp.obj
+
+.PHONY : HashTable.obj
+
+# target to build an object file
+HashTable.cpp.obj:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\HashTable.cpp.obj
+.PHONY : HashTable.cpp.obj
+
+HashTable.i: HashTable.cpp.i
+
+.PHONY : HashTable.i
+
+# target to preprocess a source file
+HashTable.cpp.i:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\HashTable.cpp.i
+.PHONY : HashTable.cpp.i
+
+HashTable.s: HashTable.cpp.s
+
+.PHONY : HashTable.s
+
+# target to generate assembly for a file
+HashTable.cpp.s:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\HashTable.cpp.s
+.PHONY : HashTable.cpp.s
+
 MovieDB.obj: MovieDB.cpp.obj
 
 .PHONY : MovieDB.obj
@@ -298,6 +325,9 @@ help:
 	@echo ... ClassicNode.obj
 	@echo ... ClassicNode.i
 	@echo ... ClassicNode.s
+	@echo ... HashTable.obj
+	@echo ... HashTable.i
+	@echo ... HashTable.s
 	@echo ... MovieDB.obj
 	@echo ... MovieDB.i
 	@echo ... MovieDB.s
