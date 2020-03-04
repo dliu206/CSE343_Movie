@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/david/CLionProjects/ASS4/ClassicNode.cpp" "C:/Users/david/CLionProjects/ASS4/cmake-build-debug/CMakeFiles/ASS4.dir/ClassicNode.cpp.obj"
   "C:/Users/david/CLionProjects/ASS4/HashTable.cpp" "C:/Users/david/CLionProjects/ASS4/cmake-build-debug/CMakeFiles/ASS4.dir/HashTable.cpp.obj"
+  "C:/Users/david/CLionProjects/ASS4/Movie.cpp" "C:/Users/david/CLionProjects/ASS4/cmake-build-debug/CMakeFiles/ASS4.dir/Movie.cpp.obj"
   "C:/Users/david/CLionProjects/ASS4/MovieDB.cpp" "C:/Users/david/CLionProjects/ASS4/cmake-build-debug/CMakeFiles/ASS4.dir/MovieDB.cpp.obj"
   "C:/Users/david/CLionProjects/ASS4/MovieHeadNode.cpp" "C:/Users/david/CLionProjects/ASS4/cmake-build-debug/CMakeFiles/ASS4.dir/MovieHeadNode.cpp.obj"
   "C:/Users/david/CLionProjects/ASS4/MovieNode.cpp" "C:/Users/david/CLionProjects/ASS4/cmake-build-debug/CMakeFiles/ASS4.dir/MovieNode.cpp.obj"

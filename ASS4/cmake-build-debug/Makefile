@@ -178,6 +178,33 @@ HashTable.cpp.s:
 	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\HashTable.cpp.s
 .PHONY : HashTable.cpp.s
 
+Movie.obj: Movie.cpp.obj
+
+.PHONY : Movie.obj
+
+# target to build an object file
+Movie.cpp.obj:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Movie.cpp.obj
+.PHONY : Movie.cpp.obj
+
+Movie.i: Movie.cpp.i
+
+.PHONY : Movie.i
+
+# target to preprocess a source file
+Movie.cpp.i:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Movie.cpp.i
+.PHONY : Movie.cpp.i
+
+Movie.s: Movie.cpp.s
+
+.PHONY : Movie.s
+
+# target to generate assembly for a file
+Movie.cpp.s:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Movie.cpp.s
+.PHONY : Movie.cpp.s
+
 MovieDB.obj: MovieDB.cpp.obj
 
 .PHONY : MovieDB.obj
@@ -328,6 +355,9 @@ help:
 	@echo ... HashTable.obj
 	@echo ... HashTable.i
 	@echo ... HashTable.s
+	@echo ... Movie.obj
+	@echo ... Movie.i
+	@echo ... Movie.s
 	@echo ... MovieDB.obj
 	@echo ... MovieDB.i
 	@echo ... MovieDB.s

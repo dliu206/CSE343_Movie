@@ -30,57 +30,15 @@ HashTable buildUserDB() {
         if (table.containsKey(id)) {
             cout << "Duplicate customer ID: " << id << endl;
         } else {
-            table.put(id, name, "");
+            User temp(id, name);
+            table.put(temp);
         }
         if (infile.eof()) {
             break;
         }
     }
     return table;
-
-//    unordered_map<int, User> umap;
-//    ifstream infile("data4customers.txt");
-//
-//    if (!infile) {
-//        cout << "Customer file couldn't be opened" << endl;
-//        return umap;
-//    }
-//    string s;
-//    for (;;) {
-//        getline(infile, s);
-//        if (s.length() == 0) {
-//            break;
-//        }
-//        int index = s.find(" ");
-//        int id = stoi(s.substr(0, index));
-//        string name = s.substr(index + 1, s.length());
-//        // found
-//        if (umap.find(id) != umap.end()) {
-//            cout << "Duplicate customer ID: " << id << endl;
-//        } else {
-//            User u(name);
-//            umap[id] = u;
-//        }
-//
-//        if (infile.eof()) {
-//            break;
-//        }
-//    }
-//
-//    return umap;
 }
-
-void displayUserDB(unordered_map<int, string> umap) {
-//    unordered_map<int, string> :: iterator itr;
-//    for (itr = umap.begin(); itr != umap.end(); itr++) {
-//        cout << itr->first << " " << itr->second << endl;
-//    }
-
-    for (auto temp: umap) {
-        cout << temp.first << " " << temp.second << endl;
-    }
-}
-
 
 int main() {
     // if you complete copy constructor for MovieDB, you can push this code into a separate method
@@ -146,10 +104,8 @@ int main() {
     }
     movieDb.display();
 
-    HashTable table = buildUserDB();
-    table.display();
-//    unordered_map<int, User> umap = buildUserDB();
-//    displayUserDB(umap);
+//    HashTable table = buildUserDB();
+//    table.display();
 
 //    ifstream infile2("data4commands");
 //    for(;;) {

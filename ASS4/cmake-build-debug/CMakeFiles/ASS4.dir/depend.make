@@ -9,6 +9,10 @@ CMakeFiles\ASS4.dir\HashTable.cpp.obj: ..\HashTable.cpp
 CMakeFiles\ASS4.dir\HashTable.cpp.obj: ..\HashTable.h
 CMakeFiles\ASS4.dir\HashTable.cpp.obj: ..\User.h
 
+CMakeFiles\ASS4.dir\Movie.cpp.obj: ..\Movie.cpp
+CMakeFiles\ASS4.dir\Movie.cpp.obj: ..\Movie.h
+CMakeFiles\ASS4.dir\Movie.cpp.obj: ..\MovieNode.h
+
 CMakeFiles\ASS4.dir\MovieDB.cpp.obj: ..\ClassicNode.h
 CMakeFiles\ASS4.dir\MovieDB.cpp.obj: ..\MovieDB.cpp
 CMakeFiles\ASS4.dir\MovieDB.cpp.obj: ..\MovieDB.h

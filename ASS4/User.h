@@ -11,20 +11,15 @@ using namespace std;
 class User {
     friend ostream &operator<<(ostream &Out, const User &U);
 public:
-    User();
-    User(string name);
-    ~User();
-    string name;
-    struct Node {
-        Node(string data);
-        string data;
-        Node* next;
-    };
-    Node* head;
-    Node* back;
+    explicit User();
+    User(int id, string name);
 
+    bool isEmpty() const;
     void insertHistory(string s);
 
+    int id;
+    string name;
+    string history;
 };
 
 

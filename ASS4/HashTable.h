@@ -17,17 +17,18 @@ public:
 //    double size;
 //    vector<string> data;
 
-    string get(int key);
-    void put(int key, string name, string value);
+    User get(int key);
+    void put(User u);
     int getHashKey(int key, int size);
-    bool remove(int key);
+//    bool remove(int key);
     bool containsKey(int key);
     int getSize();
     void display();
 
 private:
-    double size;
-    vector<string> data;
+    double n;
+    int size;
+    User* data;
 
 
 

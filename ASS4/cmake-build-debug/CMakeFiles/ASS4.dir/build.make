@@ -191,6 +191,25 @@ CMakeFiles\ASS4.dir\HashTable.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ASS4.dir\HashTable.cpp.s /c C:\Users\david\CLionProjects\ASS4\HashTable.cpp
 <<
 
+CMakeFiles\ASS4.dir\Movie.cpp.obj: CMakeFiles\ASS4.dir\flags.make
+CMakeFiles\ASS4.dir\Movie.cpp.obj: ..\Movie.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\david\CLionProjects\ASS4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ASS4.dir/Movie.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\HostX86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\ASS4.dir\Movie.cpp.obj /FdCMakeFiles\ASS4.dir\ /FS -c C:\Users\david\CLionProjects\ASS4\Movie.cpp
+<<
+
+CMakeFiles\ASS4.dir\Movie.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ASS4.dir/Movie.cpp.i"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\HostX86\x86\cl.exe > CMakeFiles\ASS4.dir\Movie.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\david\CLionProjects\ASS4\Movie.cpp
+<<
+
+CMakeFiles\ASS4.dir\Movie.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ASS4.dir/Movie.cpp.s"
+	C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\HostX86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\ASS4.dir\Movie.cpp.s /c C:\Users\david\CLionProjects\ASS4\Movie.cpp
+<<
+
 # Object files for target ASS4
 ASS4_OBJECTS = \
 "CMakeFiles\ASS4.dir\main.cpp.obj" \
@@ -199,7 +218,8 @@ ASS4_OBJECTS = \
 "CMakeFiles\ASS4.dir\MovieDB.cpp.obj" \
 "CMakeFiles\ASS4.dir\MovieHeadNode.cpp.obj" \
 "CMakeFiles\ASS4.dir\User.cpp.obj" \
-"CMakeFiles\ASS4.dir\HashTable.cpp.obj"
+"CMakeFiles\ASS4.dir\HashTable.cpp.obj" \
+"CMakeFiles\ASS4.dir\Movie.cpp.obj"
 
 # External object files for target ASS4
 ASS4_EXTERNAL_OBJECTS =
@@ -211,9 +231,10 @@ ASS4.exe: CMakeFiles\ASS4.dir\MovieDB.cpp.obj
 ASS4.exe: CMakeFiles\ASS4.dir\MovieHeadNode.cpp.obj
 ASS4.exe: CMakeFiles\ASS4.dir\User.cpp.obj
 ASS4.exe: CMakeFiles\ASS4.dir\HashTable.cpp.obj
+ASS4.exe: CMakeFiles\ASS4.dir\Movie.cpp.obj
 ASS4.exe: CMakeFiles\ASS4.dir\build.make
 ASS4.exe: CMakeFiles\ASS4.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\david\CLionProjects\ASS4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ASS4.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\david\CLionProjects\ASS4\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable ASS4.exe"
 	"C:\Program Files\JetBrains\CLion 2019.2.5\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\ASS4.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100150~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100150~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2017\COMMUN~1\VC\Tools\MSVC\1411~1.255\bin\HostX86\x86\link.exe /nologo @CMakeFiles\ASS4.dir\objects1.rsp @<<
  /out:ASS4.exe /implib:ASS4.lib /pdb:C:\Users\david\CLionProjects\ASS4\cmake-build-debug\ASS4.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
