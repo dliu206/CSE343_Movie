@@ -1,9 +1,14 @@
+////
+//// Created by david on 3/2/2020.
+////
 //
-// Created by david on 3/2/2020.
+//#include "Movie.h"
 //
-
-#include "Movie.h"
-
+//Movie::Movie(string director, string title, string year, int stock) {
+//    this->director = director;
+//    this->title = title;
+//}
+//
 //bool Movie::insert(MovieNode& M) {
 //    if (this->Data == nullptr) {
 //        this->Data = new MovieNode(M.title, M.year, M.stock);

@@ -80,10 +80,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/Classic.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/Classic.h">
+			<Option target="ASS4"/>
+		</Unit>
 		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.cpp">
 			<Option target="ASS4"/>
 		</Unit>
 		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.h">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/Comedy.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/Comedy.h">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/Drama.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="C:/Users/david/CLionProjects/ASS4/Drama.h">
 			<Option target="ASS4"/>
 		</Unit>
 		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.cpp">

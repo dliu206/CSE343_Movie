@@ -124,6 +124,33 @@ ASS4\fast:
 	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\build
 .PHONY : ASS4\fast
 
+Classic.obj: Classic.cpp.obj
+
+.PHONY : Classic.obj
+
+# target to build an object file
+Classic.cpp.obj:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Classic.cpp.obj
+.PHONY : Classic.cpp.obj
+
+Classic.i: Classic.cpp.i
+
+.PHONY : Classic.i
+
+# target to preprocess a source file
+Classic.cpp.i:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Classic.cpp.i
+.PHONY : Classic.cpp.i
+
+Classic.s: Classic.cpp.s
+
+.PHONY : Classic.s
+
+# target to generate assembly for a file
+Classic.cpp.s:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Classic.cpp.s
+.PHONY : Classic.cpp.s
+
 ClassicNode.obj: ClassicNode.cpp.obj
 
 .PHONY : ClassicNode.obj
@@ -150,6 +177,60 @@ ClassicNode.s: ClassicNode.cpp.s
 ClassicNode.cpp.s:
 	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\ClassicNode.cpp.s
 .PHONY : ClassicNode.cpp.s
+
+Comedy.obj: Comedy.cpp.obj
+
+.PHONY : Comedy.obj
+
+# target to build an object file
+Comedy.cpp.obj:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Comedy.cpp.obj
+.PHONY : Comedy.cpp.obj
+
+Comedy.i: Comedy.cpp.i
+
+.PHONY : Comedy.i
+
+# target to preprocess a source file
+Comedy.cpp.i:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Comedy.cpp.i
+.PHONY : Comedy.cpp.i
+
+Comedy.s: Comedy.cpp.s
+
+.PHONY : Comedy.s
+
+# target to generate assembly for a file
+Comedy.cpp.s:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Comedy.cpp.s
+.PHONY : Comedy.cpp.s
+
+Drama.obj: Drama.cpp.obj
+
+.PHONY : Drama.obj
+
+# target to build an object file
+Drama.cpp.obj:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Drama.cpp.obj
+.PHONY : Drama.cpp.obj
+
+Drama.i: Drama.cpp.i
+
+.PHONY : Drama.i
+
+# target to preprocess a source file
+Drama.cpp.i:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Drama.cpp.i
+.PHONY : Drama.cpp.i
+
+Drama.s: Drama.cpp.s
+
+.PHONY : Drama.s
+
+# target to generate assembly for a file
+Drama.cpp.s:
+	$(MAKE) -f CMakeFiles\ASS4.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\ASS4.dir\Drama.cpp.s
+.PHONY : Drama.cpp.s
 
 HashTable.obj: HashTable.cpp.obj
 
@@ -349,9 +430,18 @@ help:
 	@echo ... ASS4
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Classic.obj
+	@echo ... Classic.i
+	@echo ... Classic.s
 	@echo ... ClassicNode.obj
 	@echo ... ClassicNode.i
 	@echo ... ClassicNode.s
+	@echo ... Comedy.obj
+	@echo ... Comedy.i
+	@echo ... Comedy.s
+	@echo ... Drama.obj
+	@echo ... Drama.i
+	@echo ... Drama.s
 	@echo ... HashTable.obj
 	@echo ... HashTable.i
 	@echo ... HashTable.s

@@ -6,11 +6,15 @@
 #include <unordered_map>
 #include "User.h"
 #include "HashTable.h"
+#include "Classic.h"
+#include "Comedy.h"
+#include "Drama.h"
+
 using namespace std;
 
-HashTable buildUserDB() {
-    HashTable table;
-//    unordered_map<int, User> umap;
+HashTable* buildUserDB() {
+    HashTable* table = new HashTable;
+
     ifstream infile("data4customers.txt");
 
     if (!infile) {
@@ -26,12 +30,13 @@ HashTable buildUserDB() {
         int index = s.find(" ");
         int id = stoi(s.substr(0, index));
         string name = s.substr(index + 1, s.length());
-        // found
-        if (table.containsKey(id)) {
+
+        cout << s << endl;
+        if (table->containsKey(id)) {
             cout << "Duplicate customer ID: " << id << endl;
         } else {
-            User temp(id, name);
-            table.put(temp);
+            User* temp = new User(id, name);
+            table->put(temp);
         }
         if (infile.eof()) {
             break;
@@ -75,24 +80,85 @@ int main() {
         temp[5] = t;
 
         if (temp[0] == "C" || temp[0] == "F" || temp[0] == "D") {
-            MovieHeadNode* temp2;
-            bool retrieved = false;
-            if (!movieDb.retrieve(temp[0], temp[2], temp2)) {
-                temp2 = new MovieHeadNode(temp[2], 0);
-//                retrieved = true;
-            } else {
-                retrieved = true;
-            }
-//            auto* temp2 = new MovieHeadNode(temp[2], 0);
+            MovieHeadNode *temp2;
             if (temp[0] == "C") {
-                temp2->insert(new ClassicNode(temp[3], temp[5], stoi(temp[1]), temp[4]));
-            } else {
-//                temp2->insert(new MovieNode(temp[3], temp[5], stoi(temp[1])));
-                temp2->insert(new ClassicNode(temp[3], temp[5], stoi(temp[1]), ""));
+                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                    cout << 1 << endl;
+                    MovieNode *temp3;
+                    if (temp2->retrieve(temp[5], temp[4], temp3)) {
+//                        cout << 1 << endl;
+                        temp3->stock += stoi(temp[1]);
+                    } else {
+//                        cout << 1 << endl;
+
+                        ClassicNode *c2;
+                        c2->setAttributes(temp[3], temp[5], stoi(temp[1]));
+                        c2->majorActor = temp[4];
+                        MovieNode* m = c2;
+                        // title year stock
+
+//                        m->setAttributes(temp[3], temp[5], stoi(temp[1]));
+//                        m->majorActor = temp[4];
+                        temp2->insert(m);
+                    }
+                } else {
+                    temp2 = new Classic;
+                    temp2->setAttributes(temp[2], 0);
+                    cout << *temp2 << endl;
+                    movieDb.insert(temp[0], temp2);
+                }
             }
-            if (!retrieved) {
-                movieDb.insert(temp[0], temp2);
-            }
+//            else if (temp[0] == "F") {
+//                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                    Comedy* c = dynamic_cast<Comedy *>(temp2);
+//                    MovieNode* temp3;
+//                    if (c->retrieve(temp[3], temp[5], temp3)) {
+//                        temp3->stock += stoi(temp[1]);
+//                    } else {
+//                        MovieNode* m;
+//                        m->setAttributes(temp[3], temp[5], stoi(temp[1]));
+//                        c->insert(m);
+//                    }
+//                } else {
+//                    temp2->setAttributes(temp[2], 0);
+//                    movieDb.insert(temp[0], temp2);
+//                }
+//
+//            } else {
+//                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                    Drama* drama = dynamic_cast<Drama *>(temp2);
+//                    MovieNode* temp3;
+//                    if (drama->retrieve(temp[3], temp3)) {
+//                        temp3->stock += stoi(temp[1]);
+//                    } else {
+//                        MovieNode* m;
+//                        m->setAttributes(temp[3], temp[5], stoi(temp[1]));
+//                        drama->insert(m);
+//                    }
+//                } else {
+//                    temp2->setAttributes(temp[2], 0);
+//                    movieDb.insert(temp[0], temp2);
+//                }
+//            }
+//            bool retrieved = false;
+//            if (!movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                temp2 = new MovieHeadNode(temp[2], 0);
+////                retrieved = true;
+//            } else {
+////                retrieved = true;
+//            }
+////            auto* temp2 = new MovieHeadNode(temp[2], 0);
+//            if (temp[0] == "C") {
+//                temp2->insert(new ClassicNode(temp[3], temp[5], stoi(temp[1]), temp[4]));
+//            } else if (temp[0] == " F") {
+////                temp2->insert(new MovieNode(temp[3], temp[5], stoi(temp[1])));
+//                temp2->insert(new ClassicNode(temp[3], temp[5], stoi(temp[1]), ""));
+//            } else if (temp[0] == "D") {
+//
+//            }
+//            if (!retrieved) {
+//                movieDb.insert(temp[0], temp2);
+//            }
 //            movieDb.insert(temp[0], temp2);
         } else {
             cout << "Error Reading Line to add to Movie DB" << endl;
@@ -104,8 +170,8 @@ int main() {
     }
     movieDb.display();
 
-//    HashTable table = buildUserDB();
-//    table.display();
+//    HashTable* table = buildUserDB();
+//    table->display();
 
 //    ifstream infile2("data4commands");
 //    for(;;) {

@@ -11,19 +11,19 @@ ostream &operator<<(ostream &Out, const MovieNode &M) {
     return Out;
 }
 
-MovieNode::MovieNode() {
-    this->title = "";
-    this->year = -1;
-    this->stock = -1;
-    this->next = nullptr;
-}
-
-MovieNode::MovieNode(string title, string year, int stock) {
-    this->title = title;
-    this->year = year;
-    this->stock = stock;
-    this->next = nullptr;
-}
+//MovieNode::MovieNode() {
+//    this->title = "";
+//    this->year = -1;
+//    this->stock = -1;
+//    this->next = nullptr;
+//}
+//
+//MovieNode::MovieNode(string title, string year, int stock) {
+//    this->title = title;
+//    this->year = year;
+//    this->stock = stock;
+//    this->next = nullptr;
+//}
 
 bool MovieNode::operator==(const MovieNode &m) const {
     return this->title == m.title && this->year == m.year;
@@ -59,4 +59,15 @@ bool MovieNode::operator>=(const MovieNode &m) const {
         return this->year >= m.year;
     }
     return this->title >= m.title;
+}
+
+void MovieNode::setAttributes(string title, string year, int stock) {
+    this->title = title;
+    this->year = year;
+    this->stock = stock;
+    this->next = nullptr;
+}
+
+void MovieNode::display() {
+    cout << "Title: " << title << " Year: " << year << " Stock: " << stock << endl;
 }

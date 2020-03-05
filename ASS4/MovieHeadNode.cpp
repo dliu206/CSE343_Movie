@@ -7,20 +7,24 @@
 #include "ClassicNode.h"
 
 // move?
-MovieHeadNode::MovieHeadNode(string director, int totalStock) {
+//MovieHeadNode::MovieHeadNode(string director, int totalStock) {
+//    this->director = director;
+//    this->totalStock = totalStock;
+//    this->data = nullptr;
+//    this->left = nullptr;
+//    this->right = nullptr;
+//}
+//
+//MovieHeadNode::MovieHeadNode() {
+//    this->director = "";
+//    this->totalStock = 0;
+//    this->data = nullptr;
+//    this->left = nullptr;
+//    this->right = nullptr;
+//}
+void MovieHeadNode::setAttributes(string director, int totalStock) {
     this->director = director;
     this->totalStock = totalStock;
-    this->data = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
-}
-
-MovieHeadNode::MovieHeadNode() {
-    this->director = "";
-    this->totalStock = 0;
-    this->data = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
 }
 
 MovieHeadNode::~MovieHeadNode() {
@@ -63,10 +67,9 @@ MovieHeadNode::~MovieHeadNode() {
 //    current->next = temp;
 //}
 
-void MovieHeadNode::insert(ClassicNode *temp) {
-//    cout << typeid(temp).name() << endl;
+void MovieHeadNode::insert(MovieNode *temp) {
     totalStock += temp->stock;
-    ClassicNode* current = this->data;
+    MovieNode* current = this->data;
     if (this->data == nullptr) {
         this->data = temp;
         return;
@@ -112,12 +115,18 @@ void MovieHeadNode::insert(ClassicNode *temp) {
 
 ostream &operator<<(ostream &Out, const MovieHeadNode &M) {
     Out << "Director: " << M.director << " Total Stock: " << M.totalStock << endl << "Data: " << endl;
-    ClassicNode* current = M.data;
+    MovieNode* current = M.data;
     while (current != nullptr) {
-        Out << *current << endl;
+        current->display();
+//        Out << *current << endl;
         current = current->next;
     }
     return Out;
 }
+
+//void MovieHeadNode::makeMHN(string director, int totalStock) {
+//    this->director = director;
+//    this->totalStock = totalStock;
+//}
 
 

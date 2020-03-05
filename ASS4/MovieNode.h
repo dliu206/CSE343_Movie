@@ -10,17 +10,8 @@
 using namespace std;
 
 class MovieNode {
-    friend ostream &operator<<(ostream &Out, const MovieNode &M);
-public:
-
-    MovieNode();
-    MovieNode(string title, string year, int stock);
-    ~MovieNode() = default;
-
-    string title;
-    string year;
-    int stock;
-    MovieNode* next;
+     friend ostream &operator<<(ostream &Out, const MovieNode &M);
+protected:
 
     bool operator>(const MovieNode &M) const;
     bool operator<(const MovieNode &M) const;
@@ -28,6 +19,19 @@ public:
     bool operator<=(const MovieNode &M) const;
     bool operator==(const MovieNode &M) const;
     bool operator!=(const MovieNode &M) const;
+
+public:
+    virtual void display();
+    MovieNode* next;
+    int stock;
+    string year;
+
+//    MovieNode();
+//    MovieNode(string title, string year, int stock);
+//    ~MovieNode() = default;
+    void setAttributes(string title, string year, int stock);
+
+    string title;
 };
 
 

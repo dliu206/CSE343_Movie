@@ -11,10 +11,9 @@
 class ClassicNode : public MovieNode {
     friend ostream &operator<<(ostream &Out, const ClassicNode &C);
 public:
-
-    ClassicNode(string title, string year, int stock, string majorActor);
+    void display();
+    void setMajorActor(string majorActor);
     string majorActor;
-    ClassicNode* next;
 
     bool operator>(const ClassicNode &C) const;
     bool operator<(const ClassicNode &C) const;

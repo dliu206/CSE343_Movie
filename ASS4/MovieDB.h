@@ -14,7 +14,7 @@ public:
 
     MovieHeadNode* funnyRoot;
     MovieHeadNode* dramaRoot;
-    MovieHeadNode *classicRoot;
+    MovieHeadNode* classicRoot;
 
     void insert(string op, MovieHeadNode* target);
     bool retrieve(string op, string director, MovieHeadNode*& pos);

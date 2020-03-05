@@ -2,6 +2,7 @@
 //// Created by david on 2/22/2020.
 ////
 //
+#include <iostream>
 #include "User.h"
 //
 User::User() {
@@ -31,46 +32,9 @@ ostream &operator<<(ostream &Out, const User &U) {
     Out << "User's History: " << U.history << endl;
     return Out;
 }
-//User::User() {
-//    this->name = "";
-//    this->head = nullptr;
-//    this->back = nullptr;
-//}
-//
-//User::~User() {
-//    Node* current = this->head;
-//
-//    while (current != nullptr) {
-//        Node* temp = current->next;
-//        delete current;
-//        current = temp;
-//    }
-//}
-//
-//User::Node::Node(string data) {
-//    this->data = data;
-//}
-//
-//
-//void User::insertHistory(string s) {
-//    if (this->head == nullptr) {
-//        this->head = new Node(s);
-//        this->back = this->head;
-//        return;
-//    }
-//    Node* temp = new Node(s);
-//    this->back->next = temp;
-//    this->back = temp;
-//}
-//
-//ostream &operator<<(ostream &Out, const User &U) {
-//    Out << "User Name : " << U.name << endl;
-//    Out << "User History: " << endl;
-//    auto* curr = U.head;
-//    while (curr != nullptr) {
-//        Out << curr->data << endl;
-//        curr = curr->next;
-//    }
-//    return Out;
-//}
 
+void User::display() {
+    cout << "User's ID: " << id << endl;
+    cout << "User's Name: " << name << endl;
+    cout << "User's History: " << history << endl;
+}

@@ -10,11 +10,13 @@ ostream &operator<<(ostream &Out, const ClassicNode &C) {
     Out << "Title: " << C.title << " Year: " << C.year << " Stock: " << C.stock  << " Major Actor: " << C.majorActor;
     return Out;
 }
-
-ClassicNode::ClassicNode(string title, string year, int stock, string majorActor) : MovieNode(title, year, stock) {
-    this->majorActor = majorActor;
-    this->next = nullptr;
+void ClassicNode::display() {
+    cout << "Title: " << title << " Year: " << year << " Stock: " << stock  << " Major Actor: " << majorActor;
 }
+//ClassicNode::ClassicNode(string title, string year, int stock, string majorActor) : MovieNode(title, year, stock) {
+//    this->majorActor = majorActor;
+//    this->next = nullptr;
+//}
 
 
 bool ClassicNode::operator<(const ClassicNode &C) const {
@@ -64,5 +66,13 @@ bool ClassicNode::operator==(const ClassicNode &C) const {
 bool ClassicNode::operator!=(const ClassicNode &C) const {
     return !(*this == C);
 }
+
+void ClassicNode::setMajorActor(string majorActor) {
+    this->majorActor = majorActor;
+}
+
+//ClassicNode::ClassicNode(string majorActor) {
+//    this->majorActor = majorActor;
+//}
 
 

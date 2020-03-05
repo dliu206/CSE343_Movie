@@ -42,10 +42,7 @@ void MovieDB::insert(string op, MovieHeadNode *target) {
             }
         } else if (op == "C") {
             if (classicRoot == nullptr) {
-                // only works if it's a classic head node lmao
-//                cout << *target << endl;
                 classicRoot = target;
-//                cout << classicRoot << endl;
             } else {
                 insertHelper(classicRoot, target);
             }
@@ -74,7 +71,6 @@ void MovieDB::insertHelper(MovieHeadNode *curr, MovieHeadNode *target) {
             }
         }
     }
-
 }
 
 void MovieDB::display() const {

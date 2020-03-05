@@ -6,9 +6,21 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/david/CLionProjects/ASS4/Classic.h
+MovieHeadNode.h
+C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
+
 C:/Users/david/CLionProjects/ASS4/ClassicNode.h
 MovieNode.h
 C:/Users/david/CLionProjects/ASS4/MovieNode.h
+
+C:/Users/david/CLionProjects/ASS4/Comedy.h
+MovieHeadNode.h
+C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
+
+C:/Users/david/CLionProjects/ASS4/Drama.h
+MovieHeadNode.h
+C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
 
 C:/Users/david/CLionProjects/ASS4/HashTable.h
 iostream
@@ -21,6 +33,14 @@ C:/Users/david/CLionProjects/ASS4/User.h
 C:/Users/david/CLionProjects/ASS4/MovieDB.h
 MovieHeadNode.h
 C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
+
+C:/Users/david/CLionProjects/ASS4/MovieHeadNode.cpp
+iostream
+-
+MovieHeadNode.h
+C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
+ClassicNode.h
+C:/Users/david/CLionProjects/ASS4/ClassicNode.h
 
 C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h
 MovieNode.h
@@ -55,4 +75,10 @@ User.h
 C:/Users/david/CLionProjects/ASS4/User.h
 HashTable.h
 C:/Users/david/CLionProjects/ASS4/HashTable.h
+Classic.h
+C:/Users/david/CLionProjects/ASS4/Classic.h
+Comedy.h
+C:/Users/david/CLionProjects/ASS4/Comedy.h
+Drama.h
+C:/Users/david/CLionProjects/ASS4/Drama.h
 
