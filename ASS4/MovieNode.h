@@ -10,15 +10,15 @@
 using namespace std;
 
 class MovieNode {
-     friend ostream &operator<<(ostream &Out, const MovieNode &M);
+    friend ostream& operator<<(ostream& Out, const MovieNode& M);
 protected:
 
-    bool operator>(const MovieNode &M) const;
-    bool operator<(const MovieNode &M) const;
-    bool operator>=(const MovieNode &M) const;
-    bool operator<=(const MovieNode &M) const;
-    bool operator==(const MovieNode &M) const;
-    bool operator!=(const MovieNode &M) const;
+    bool operator>(const MovieNode& M) const;
+    bool operator<(const MovieNode& M) const;
+    bool operator>=(const MovieNode& M) const;
+    bool operator<=(const MovieNode& M) const;
+    bool operator==(const MovieNode& M) const;
+    bool operator!=(const MovieNode& M) const;
 
 public:
     virtual void display();
@@ -26,9 +26,9 @@ public:
     int stock;
     string year;
 
-//    MovieNode();
-//    MovieNode(string title, string year, int stock);
-//    ~MovieNode() = default;
+    MovieNode();
+    //    MovieNode(string title, string year, int stock);
+    //    ~MovieNode() = default;
     void setAttributes(string title, string year, int stock);
 
     string title;
