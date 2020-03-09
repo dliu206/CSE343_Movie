@@ -46,7 +46,6 @@ HashTable* buildUserDB() {
 }
 
 int main() {
-    // if you complete copy constructor for MovieDB, you can push this code into a separate method
     MovieDB movieDb;
 
     ifstream infile("data4movies.txt");
@@ -79,35 +78,46 @@ int main() {
         temp[4] = temp[4].substr(0, count + 1);
         temp[5] = t;
 
+        // D and F
+        // 0 -> Op, 1 -> Stock, 2 -> Director, 3 -> Title, 4 -> Year
+        // C
+        // 0 -> Op, 1 -> Stock, 2 -> Director, 3 -> Title, 4 -> Major Actor, 5 -> Year
+        // retrieve has not been checked but i like it
         if (temp[0] == "C" || temp[0] == "F" || temp[0] == "D") {
-            MovieHeadNode *temp2;
+            MovieHeadNode* headNode;
             if (temp[0] == "C") {
-                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
-//                    cout << 1 << endl;
-                    MovieNode *temp3;
-                    if (temp2->retrieve(temp[5], temp[4], temp3)) {
-//                        cout << 1 << endl;
-                        temp3->stock += stoi(temp[1]);
+                if (movieDb.retrieve(temp[0], temp[2], headNode)) {
+                    MovieNode* m;
+                    // don't know if this is true
+                    if (headNode->retrieve(temp[5], temp[5], temp[4], m)) {
+                        m->stock += stoi(temp[1]);
                     } else {
-//                        cout << 1 << endl;
-
-                        ClassicNode *c2;
-                        c2->setAttributes(temp[3], temp[5], stoi(temp[1]));
-                        c2->majorActor = temp[4];
-                        MovieNode* m = c2;
-                        // title year stock
-
-//                        m->setAttributes(temp[3], temp[5], stoi(temp[1]));
-//                        m->majorActor = temp[4];
-                        temp2->insert(m);
+                        ClassicNode c2;
+                        c2.setAttributes(temp[3], temp[5], stoi(temp[1]));
+                        c2.setAttribute(temp[4]);
+                        m = &c2;
+                        headNode->insert(m);
                     }
                 } else {
-                    temp2 = new Classic;
-                    temp2->setAttributes(temp[2], 0);
-                    cout << *temp2 << endl;
-                    movieDb.insert(temp[0], temp2);
+                    Classic c;
+                    c.setAttributes(temp[2], stoi(temp[1]));
+
+                    MovieNode* m;
+                    ClassicNode c2;
+                    c2.setAttributes(temp[3], temp[5], stoi(temp[1]));
+                    c2.setAttribute(temp[4]);
+                    m = &c2;
+
+                    headNode = &c;
+                    headNode->insert(m);
+//                    cout << *headNode << endl;
+
+                    movieDb.insert(temp[0], headNode);
                 }
             }
+
+// HERE
+
 //            else if (temp[0] == "F") {
 //                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
 //                    Comedy* c = dynamic_cast<Comedy *>(temp2);
@@ -160,8 +170,10 @@ int main() {
 //                movieDb.insert(temp[0], temp2);
 //            }
 //            movieDb.insert(temp[0], temp2);
+
+// HERE
         } else {
-            cout << "Error Reading Line to add to Movie DB" << endl;
+            cout << "Incorrect Operator - Must Be (C) Classic / (F) Funny / (D) Drama" << endl;
         }
 
         if (infile.eof()) {
@@ -169,6 +181,11 @@ int main() {
         }
     }
     movieDb.display();
+//    movieDb.classicRoot->display();
+//    cout << movieDb << endl;
+
+// HERE
+
 
 //    HashTable* table = buildUserDB();
 //    table->display();

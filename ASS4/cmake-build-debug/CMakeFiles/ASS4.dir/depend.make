@@ -40,7 +40,6 @@ CMakeFiles\ASS4.dir\MovieHeadNode.cpp.obj: ..\MovieHeadNode.cpp
 CMakeFiles\ASS4.dir\MovieHeadNode.cpp.obj: ..\MovieHeadNode.h
 CMakeFiles\ASS4.dir\MovieHeadNode.cpp.obj: ..\MovieNode.h
 
-CMakeFiles\ASS4.dir\MovieNode.cpp.obj: ..\ClassicNode.h
 CMakeFiles\ASS4.dir\MovieNode.cpp.obj: ..\MovieNode.cpp
 CMakeFiles\ASS4.dir\MovieNode.cpp.obj: ..\MovieNode.h
 

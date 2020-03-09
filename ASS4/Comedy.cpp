@@ -4,7 +4,7 @@
 
 #include "Comedy.h"
 
-bool Comedy::retrieve(string title, string year, MovieNode *&M) {
+bool Comedy::retrieve(string title, string year, string majorActor, MovieNode *&M) {
     MovieNode* curr = this->data;
     while (curr != nullptr) {
         if (curr->title == title && curr->year == year) {

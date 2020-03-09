@@ -12,7 +12,8 @@ class ClassicNode : public MovieNode {
     friend ostream &operator<<(ostream &Out, const ClassicNode &C);
 public:
     void display();
-    void setMajorActor(string majorActor);
+    void setAttribute(string majorActor);
+//    void setMajorActor(string majorActor);
     string majorActor;
 
     bool operator>(const ClassicNode &C) const;

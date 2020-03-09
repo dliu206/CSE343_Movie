@@ -10,7 +10,7 @@
 
 class Comedy : public MovieHeadNode {
 public:
-     bool retrieve(string title, string year, MovieNode*& M);
+    bool retrieve(string title, string year, string majorActor, MovieNode*& target);
 };
 
 

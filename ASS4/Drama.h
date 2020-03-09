@@ -10,7 +10,7 @@
 
 class Drama : public MovieHeadNode {
 public:
-    bool retrieve(string title, MovieNode*& target);
+    bool retrieve(string title, string year, string majorActor, MovieNode*& target);
 };
 
 

@@ -13,8 +13,8 @@
 class MovieHeadNode {
     friend ostream &operator<<(ostream &Out, const MovieHeadNode &M);
 public:
-    virtual bool retrieve(string title, string year, MovieNode*&) = 0;
-
+    virtual bool retrieve(string title, string year, string majorActor, MovieNode*&) = 0;
+    void display();
     ~MovieHeadNode();
     string director;
     int totalStock;
@@ -22,12 +22,16 @@ public:
     MovieHeadNode* left;
     MovieHeadNode* right;
 
+    bool operator==(const MovieHeadNode &M) const;
+    bool operator!=(const MovieHeadNode &M) const;
+    bool operator<(const MovieHeadNode &M) const;
+    bool operator>(const MovieHeadNode &M) const;
+
     //    virtual void insert(ClassicNode *temp);
 //    virtual bool retrieve(const string director, MovieNode*& pos);
 
 
 //    bool retrieve(const string title, string year, MovieNode *&pos);
-public:
     virtual void insert(MovieNode* temp);
 
 //    virtual void makeMHN(string director, int totalStock);

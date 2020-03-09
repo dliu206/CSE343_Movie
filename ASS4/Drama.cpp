@@ -4,7 +4,7 @@
 
 #include "Drama.h"
 
-bool Drama::retrieve(string title, MovieNode *&target) {
+bool Drama::retrieve(string title, string year, string majorActor, MovieNode *&target) {
     MovieNode* curr = this->data;
     while (curr != nullptr) {
         if (curr->title == title) {

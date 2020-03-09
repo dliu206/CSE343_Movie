@@ -23,15 +23,11 @@ protected:
 public:
     virtual void display();
     MovieNode* next;
+    string title;
     int stock;
     string year;
 
-//    MovieNode();
-//    MovieNode(string title, string year, int stock);
-//    ~MovieNode() = default;
     void setAttributes(string title, string year, int stock);
-
-    string title;
 };
 
 

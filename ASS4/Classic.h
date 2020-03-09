@@ -10,8 +10,7 @@
 
 class Classic : public MovieHeadNode {
 public:
-
-    bool retrieve(string year, string majorActor, MovieNode*& target);
+    bool retrieve(string title, string year, string majorActor, MovieNode*& target);
 };
 
 

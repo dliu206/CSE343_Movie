@@ -4,10 +4,10 @@
 
 #include "Classic.h"
 
-bool Classic::retrieve(string year, string majorActor, MovieNode *&target) {
+bool Classic::retrieve(string title, string year, string majorActor, MovieNode *&target) {
     ClassicNode* curr = static_cast<ClassicNode *>(this->data);
     while (curr != nullptr) {
-        if (curr->year == year && curr->majorActor == majorActor) {
+        if (curr->title == title && curr->year == year && curr->majorActor == majorActor) {
             target = curr;
             return true;
         } else {
