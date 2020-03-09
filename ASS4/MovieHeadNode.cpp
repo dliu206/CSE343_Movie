@@ -54,6 +54,10 @@ void MovieHeadNode::insert(MovieNode *temp) {
     current->next = temp;
 }
 
+bool MovieHeadNode::retrieve(string title, string year, string majorActor, MovieNode*&) {
+    return false;
+}
+
 ostream &operator<<(ostream &Out, const MovieHeadNode &M) {
     Out << "Director: " << M.director << " Total Stock: " << M.totalStock << endl << "Data: " << endl;
     MovieNode* current = M.data;
@@ -62,6 +66,10 @@ ostream &operator<<(ostream &Out, const MovieHeadNode &M) {
         current = current->next;
     }
     return Out;
+}
+
+MovieHeadNode::MovieHeadNode() {
+
 }
 
 void MovieHeadNode::display() {

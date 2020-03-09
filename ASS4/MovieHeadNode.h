@@ -13,7 +13,8 @@
 class MovieHeadNode {
     friend ostream &operator<<(ostream &Out, const MovieHeadNode &M);
 public:
-    virtual bool retrieve(string title, string year, string majorActor, MovieNode*&) = 0;
+    MovieHeadNode();
+    bool retrieve(string title, string year, string majorActor, MovieNode*&);
     void display();
     ~MovieHeadNode();
     string director;
