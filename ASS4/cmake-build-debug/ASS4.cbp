@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ASS4">
-				<Option output="C:/Users/david/CLionProjects/ASS4/cmake-build-debug/ASS4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option output="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug/ASS4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 ASS4"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 ASS4"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ASS4/fast">
-				<Option output="C:/Users/david/CLionProjects/ASS4/cmake-build-debug/ASS4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option output="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug/ASS4.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="msvc8"/>
@@ -53,97 +53,97 @@
 					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 ASS4/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 ASS4/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option working_dir="C:/Users/david/Desktop/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\david\Desktop\CSE343_Movie\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Classic.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Classic.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Classic.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Classic.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/ClassicNode.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/ClassicNode.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Comedy.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Comedy.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Comedy.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Comedy.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Drama.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Drama.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Drama.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Drama.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/HashTable.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/HashTable.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Movie.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Movie.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Movie.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/Movie.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieDB.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieDB.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieDB.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieDB.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieHeadNode.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieHeadNode.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieHeadNode.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieNode.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieNode.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieNode.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieNode.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/User.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/User.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/User.h">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/User.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/main.cpp">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/main.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/CMakeLists.txt">
+		<Unit filename="C:/Users/david/Desktop/CSE343_Movie/ASS4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
