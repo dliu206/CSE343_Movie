@@ -23,8 +23,6 @@ public:
     bool operator!=(const Movie& M) const;
 private:
     string director;
-    string title;
-    string year;
     int totalStock;
     Movie* Left;
     Movie* Right;

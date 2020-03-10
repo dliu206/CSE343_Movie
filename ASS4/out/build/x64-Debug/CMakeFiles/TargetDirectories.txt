@@ -1,0 +1,3 @@
+C:/Users/gadel/Documents/CSS 343/Program 4/ASS4/out/build/x64-Debug/CMakeFiles/ASS4.dir
+C:/Users/gadel/Documents/CSS 343/Program 4/ASS4/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/gadel/Documents/CSS 343/Program 4/ASS4/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

@@ -11,27 +11,34 @@
 #include <set>
 
 class MovieHeadNode {
-
-    // Movie Head Nodes will compare by Director
-// Movie Node will compare by title, year
-// Classic Node will compare by title, year, and major actor
-// all have stocks
     friend ostream &operator<<(ostream &Out, const MovieHeadNode &M);
 public:
     MovieHeadNode();
-    MovieHeadNode(string director, int totalStock);
+    bool retrieve(string title, string year, string majorActor, MovieNode*&);
+    void display();
     ~MovieHeadNode();
     string director;
     int totalStock;
-    ClassicNode* data;
+    MovieNode* data;
     MovieHeadNode* left;
     MovieHeadNode* right;
 
-//    virtual void insert(MovieNode* temp);
-    virtual void insert(ClassicNode *temp);
+    bool operator==(const MovieHeadNode &M) const;
+    bool operator!=(const MovieHeadNode &M) const;
+    bool operator<(const MovieHeadNode &M) const;
+    bool operator>(const MovieHeadNode &M) const;
+
+    //    virtual void insert(ClassicNode *temp);
 //    virtual bool retrieve(const string director, MovieNode*& pos);
 
 
+//    bool retrieve(const string title, string year, MovieNode *&pos);
+    virtual void insert(MovieNode* temp);
+
+//    virtual void makeMHN(string director, int totalStock);
+//    MovieHeadNode();
+//    MovieHeadNode(string director, int totalStock);
+    void setAttributes(string director, int totalStock);
 };
 
 

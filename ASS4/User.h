@@ -17,6 +17,8 @@ public:
     bool isEmpty() const;
     void insertHistory(string s);
 
+    void display();
+
     int id;
     string name;
     string history;

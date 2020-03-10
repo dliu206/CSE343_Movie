@@ -8,27 +8,33 @@
 #include <iostream>
 #include <vector>
 #include "User.h"
+#include <fstream>
 
 using namespace std;
 
 class HashTable {
 public:
     HashTable();
-//    double size;
-//    vector<string> data;
+    ~HashTable();
+    //    double size;
+    //    vector<string> data;
 
-    User get(int key);
-    void put(User u);
+    void build(string);
+
+    User* get(int key);
+    User* retrieve(int key, User*& U);
+    void put(User* u);
     int getHashKey(int key, int size);
-//    bool remove(int key);
+    //    bool remove(int key);
     bool containsKey(int key);
     int getSize();
     void display();
 
+
 private:
     double n;
     int size;
-    User* data;
+    User** data;
 
 
 

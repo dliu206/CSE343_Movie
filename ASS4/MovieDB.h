@@ -14,14 +14,14 @@ public:
 
     MovieHeadNode* funnyRoot;
     MovieHeadNode* dramaRoot;
-    MovieHeadNode *classicRoot;
+    MovieHeadNode* classicRoot;
 
-    void insert(string op, MovieHeadNode* target);
+    void insert(string op, MovieHeadNode*& target);
     bool retrieve(string op, string director, MovieHeadNode*& pos);
     void display() const;
 private:
-    void deleteHelper(MovieHeadNode* curr);
-    void insertHelper(MovieHeadNode* curr, MovieHeadNode* target);
+    void deleteHelper(MovieHeadNode& curr);
+    void insertHelper(MovieHeadNode& curr, MovieHeadNode*& target);
     void displayHelper(MovieHeadNode* curr) const;
 
 

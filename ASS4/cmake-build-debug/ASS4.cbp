@@ -4,128 +4,150 @@
 	<Project>
 		<Option title="ASS4"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ASS4">
-				<Option output="C:/Users/david/CLionProjects/ASS4/cmake-build-debug/ASS4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 ASS4"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="ASS4/fast">
-				<Option output="C:/Users/david/CLionProjects/ASS4/cmake-build-debug/ASS4.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="msvc8"/>
-				<Compiler>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\ATLMFC\include"/>
-					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.11.25503\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.15063.0\winrt"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 ASS4/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/david/CLionProjects/ASS4/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\david\CLionProjects\ASS4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ASS4">
+				<Option output="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/ASS4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 ASS4"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ASS4/fast">
+				<Option output="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/ASS4" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 ASS4/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Classic.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/ClassicNode.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Classic.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/ClassicNode.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/HashTable.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/ClassicNode.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Movie.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Comedy.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/Movie.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Comedy.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieDB.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Drama.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieDB.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Drama.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieHeadNode.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/HashTable.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieHeadNode.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/HashTable.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieNode.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Movie.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/MovieNode.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/Movie.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/User.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/MovieDB.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/User.h">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/MovieDB.h">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/main.cpp">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/MovieHeadNode.cpp">
 			<Option target="ASS4"/>
 		</Unit>
-		<Unit filename="C:/Users/david/CLionProjects/ASS4/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/MovieHeadNode.h">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/MovieNode.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/MovieNode.h">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/User.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/User.h">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/main.cpp">
+			<Option target="ASS4"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/david/Desktop/fork/CSE343_Movie/ASS4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
