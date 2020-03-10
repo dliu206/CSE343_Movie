@@ -14,7 +14,6 @@
     <list default="true" id="f41d59a2-ec1a-411e-9446-ce57ced3ab77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassicNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ClassicNode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieHeadNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MovieHeadNode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieHeadNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/MovieHeadNode.h" afterDir="false" />
@@ -89,7 +88,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../CSE343_Movie/ASS4" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
@@ -141,7 +140,7 @@
       <workItem from="1583616147662" duration="4081000" />
       <workItem from="1583714381279" duration="612000" />
       <workItem from="1583715633297" duration="296000" />
-      <workItem from="1583798107656" duration="5630000" />
+      <workItem from="1583798107656" duration="5982000" />
     </task>
     <servers />
   </component>
@@ -162,21 +161,25 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="409" key="GridCell.Tab.0.bottom" timestamp="1583830181105">
+    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1583830384098">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="409" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583830181105" />
-    <state width="2517" height="409" key="GridCell.Tab.0.center" timestamp="1583830181105">
+    <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1583830384098" />
+    <state width="2517" height="409" key="GridCell.Tab.0.bottom" timestamp="1583830385162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="409" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583830181105" />
-    <state width="2517" height="409" key="GridCell.Tab.0.left" timestamp="1583830181105">
+    <state width="2517" height="409" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1583830385162" />
+    <state width="2517" height="409" key="GridCell.Tab.0.center" timestamp="1583830385162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="409" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583830181105" />
-    <state width="2517" height="409" key="GridCell.Tab.0.right" timestamp="1583830181105">
+    <state width="2517" height="409" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1583830385162" />
+    <state width="2517" height="409" key="GridCell.Tab.0.left" timestamp="1583830385162">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="409" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583830181105" />
+    <state width="2517" height="409" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1583830385162" />
+    <state width="2517" height="409" key="GridCell.Tab.0.right" timestamp="1583830385162">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="409" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1583830385162" />
   </component>
 </project>
