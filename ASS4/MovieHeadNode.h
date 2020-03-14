@@ -28,6 +28,11 @@ class MovieHeadNode {
     friend ostream &operator<<(ostream &Out, const MovieHeadNode &M);
 public:
     MovieHeadNode();
+<<<<<<< HEAD
+=======
+    bool retrieve(string title, string year, string majorActor, MovieNode*&);
+    void display();
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
     ~MovieHeadNode();
     // sets director and total stock
     void setAttributes(string director, int totalStock);

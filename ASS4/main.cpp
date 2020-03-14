@@ -74,9 +74,15 @@ int main() {
 
             MovieHeadNode* headNode = new MovieHeadNode;
             if (temp[0] == "C") {
+<<<<<<< HEAD
                 movieDb.retrieve("C", temp[5], temp[4], movieDb.classicRoot, headNode);
                 if (headNode->director != "") {
                     MovieNode* m = new MovieNode;
+=======
+                if (movieDb.retrieve(temp[0], temp[2], headNode)) {
+                    MovieNode* m = new MovieNode;
+                    // don't know if this is true
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
                     if (headNode->retrieve(temp[5], temp[5], temp[4], m)) {
                         m->stock += stoi(temp[1]);
                     }
@@ -107,6 +113,7 @@ int main() {
                     if (headNode->retrieve(temp[3], temp[4], "", m)) {
                         m->stock += stoi(temp[1]);
                     } else {
+<<<<<<< HEAD
                         m->setAttributes(temp[3], temp[4], stoi(temp[1]));
                         headNode->insert(m);
                     }
@@ -139,11 +146,92 @@ int main() {
                     m->setAttributes(temp[3], temp[4], stoi(temp[1]));
 
                     headNode = d;
+=======
+                        ClassicNode* c2 = new ClassicNode;
+                        c2->setAttributes(temp[3], temp[5], stoi(temp[1]));
+                        c2->setAttribute(temp[4]);
+                        m = c2;
+                        headNode->insert(m);
+                    }
+                } else {
+                    headNode = nullptr;
+                    Classic* c = new Classic;
+
+                    c->setAttributes(temp[2], 0);
+
+                    MovieNode* m = new MovieNode;
+                    ClassicNode* c2 = new ClassicNode;
+                    c2->setAttributes(temp[3], temp[5], stoi(temp[1]));
+                    c2->setAttribute(temp[4]);
+//                    cout << c2->title << endl;
+                    m = c2;
+
+                    headNode = c;
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
                     headNode->insert(m);
 
                     movieDb.insert(temp[0], headNode);
                 }
             }
+<<<<<<< HEAD
+=======
+
+
+//            else if (temp[0] == "F") {
+//                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                    Comedy* c = dynamic_cast<Comedy *>(temp2);
+//                    MovieNode* temp3;
+//                    if (c->retrieve(temp[3], temp[5], temp3)) {
+//                        temp3->stock += stoi(temp[1]);
+//                    } else {
+//                        MovieNode* m;
+//                        m->setAttributes(temp[3], temp[5], stoi(temp[1]));
+//                        c->insert(m);
+//                    }
+//                } else {
+//                    temp2->setAttributes(temp[2], 0);
+//                    movieDb.insert(temp[0], temp2);
+//                }
+//
+//            } else {
+//                if (movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                    Drama* drama = dynamic_cast<Drama *>(temp2);
+//                    MovieNode* temp3;
+//                    if (drama->retrieve(temp[3], temp3)) {
+//                        temp3->stock += stoi(temp[1]);
+//                    } else {
+//                        MovieNode* m;
+//                        m->setAttributes(temp[3], temp[5], stoi(temp[1]));
+//                        drama->insert(m);
+//                    }
+//                } else {
+//                    temp2->setAttributes(temp[2], 0);
+//                    movieDb.insert(temp[0], temp2);
+//                }
+//            }
+//            bool retrieved = false;
+//            if (!movieDb.retrieve(temp[0], temp[2], temp2)) {
+//                temp2 = new MovieHeadNode(temp[2], 0);
+////                retrieved = true;
+//            } else {
+////                retrieved = true;
+//            }
+////            auto* temp2 = new MovieHeadNode(temp[2], 0);
+//            if (temp[0] == "C") {
+//                temp2->insert(new ClassicNode(temp[3], temp[5], stoi(temp[1]), temp[4]));
+//            } else if (temp[0] == " F") {
+////                temp2->insert(new MovieNode(temp[3], temp[5], stoi(temp[1])));
+//                temp2->insert(new ClassicNode(temp[3], temp[5], stoi(temp[1]), ""));
+//            } else if (temp[0] == "D") {
+//
+//            }
+//            if (!retrieved) {
+//                movieDb.insert(temp[0], temp2);
+//            }
+//            movieDb.insert(temp[0], temp2);
+
+// HERE
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
         } else {
             cout << "Incorrect Operator - Must Be (C) Classic / (F) Funny / (D) Drama" << endl;
         }
@@ -151,10 +239,17 @@ int main() {
             return 0;
         }
     }
+<<<<<<< HEAD
 
     // HashTable is a HashMap to store Users
     HashTable table;
     table.build("data4customers.txt");
+=======
+    cout << "Hello World" << endl;
+    movieDb.display();
+
+// HERE
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
 
     // Reads the data4commands and performs transactions given the table and movieDb.
     ifstream infile2("data4commands.txt");

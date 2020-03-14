@@ -59,6 +59,7 @@ HashTable::~HashTable() {
     data = nullptr;
 }
 
+<<<<<<< HEAD
 // ------------------------------------ build -----------------------------------------------
 
 // Description
@@ -68,6 +69,8 @@ HashTable::~HashTable() {
 // postconditions: Stores values into the Hash Table given specificly styled lines specified in prog4_2020.pdf
 
 // --------------------------------------------------------------------------------------------
+=======
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
 void HashTable::build(string fileName) {
     ifstream infile(fileName);
 

@@ -109,6 +109,7 @@ void MovieHeadNode::insert(MovieNode *temp) {
     current->next = temp;
 }
 
+<<<<<<< HEAD
 // ------------------------------------ retrieve -----------------------------------------------
 
 // Description
@@ -118,10 +119,13 @@ void MovieHeadNode::insert(MovieNode *temp) {
 // postconditions: N/A
 
 // --------------------------------------------------------------------------------------------
+=======
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
 bool MovieHeadNode::retrieve(string title, string year, string majorActor, MovieNode*&) {
     return false;
 }
 
+<<<<<<< HEAD
 // ------------------------------------ operator<< -----------------------------------------------
 
 // Description
@@ -131,6 +135,8 @@ bool MovieHeadNode::retrieve(string title, string year, string majorActor, Movie
 // postconditions: Writes contents of MovieHeadNode to console
 
 // --------------------------------------------------------------------------------------------
+=======
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
 ostream &operator<<(ostream &Out, const MovieHeadNode &M) {
     Out << "Director: " << M.director << " Total Stock: " << M.totalStock << endl << "Data: " << endl;
     MovieNode* current = M.data;
@@ -141,6 +147,7 @@ ostream &operator<<(ostream &Out, const MovieHeadNode &M) {
     return Out;
 }
 
+<<<<<<< HEAD
 // ------------------------------------ display -----------------------------------------------
 
 // Description
@@ -150,6 +157,12 @@ ostream &operator<<(ostream &Out, const MovieHeadNode &M) {
 // postconditions: Writes contents of MovieHeadNode to console
 
 // --------------------------------------------------------------------------------------------
+=======
+MovieHeadNode::MovieHeadNode() {
+
+}
+
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
 void MovieHeadNode::display() {
     cout << "Director : " << director << " Total Stock: " << totalStock << endl;
     MovieNode* curr = this->data;

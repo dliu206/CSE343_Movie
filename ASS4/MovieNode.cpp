@@ -37,11 +37,15 @@ ostream& operator<<(ostream& Out, const MovieNode& M) {
 
 // ------------------------------------ operator== -----------------------------------------------
 
+<<<<<<< HEAD
 // Description
 
 // operator==: Returns T if the other MovieNode is equal to this one, F otherwise
 // preconditions: n/a
 // postconditions: Returns T if the other MovieNode is equal to this one, F otherwise
+=======
+bool MovieNode::operator==(const MovieNode& m) const {
+>>>>>>> 4ce6d8968ddddb965dd8f804861bc6a7933c0cd7
 
 // --------------------------------------------------------------------------------------------
 bool MovieNode::operator==(const MovieNode& m) const {
