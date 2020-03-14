@@ -1,31 +1,84 @@
 //
-// Created by david on 2/14/2020.
-//
+
+// ----------------------------------------- MovieDB.cpp ------------------------------------------------------
+
+// CSS 343 C - Implementation Group 1
+// David Liu
+// Gabe Acuna
+
+// 3/13/2020
+
+// ----------------------------------------- File Description ----------------------------------------------------------
+
+// The following file shows the implementation of MovieDB
+
+// ------------------------------------------- Assumptions -------------------------------------------------------------
+
+// N/A
+
+// --------------------------------------------------------------------------------------------------------------------
 
 #include <iostream>
 #include "MovieDB.h"
 using namespace std;
 
+// ------------------------------------ Constructor -----------------------------------------------
+
+// Description
+
+// Constructor: initializes the MovieDB with null roots
+// preconditions: n/a
+// postconditions: initializes the MovieDB with null roots
+
+// --------------------------------------------------------------------------------------------
 MovieDB::MovieDB() {
     this->funnyRoot = nullptr;
     this->dramaRoot = nullptr;
     this->classicRoot = nullptr;
 }
 
+
+// ------------------------------------ Deconstructor -----------------------------------------------
+
+// Description
+
+// Deconstructor: Frees memory from the MovieDB
+// preconditions: n/a
+// postconditions: Frees memory from the MovieDB
+
+// --------------------------------------------------------------------------------------------
 MovieDB::~MovieDB() {
-    deleteHelper(*funnyRoot);
-    deleteHelper(*dramaRoot);
-    deleteHelper(*classicRoot);
+    deleteHelper(funnyRoot);
+    deleteHelper(dramaRoot);
+    deleteHelper(classicRoot);
 }
 
-void MovieDB::deleteHelper(MovieHeadNode& curr) {
-//    if (curr != nullptr) {
-//        deleteHelper(curr->left);
-//        deleteHelper(curr->right);
-//        delete curr;
-//    }
+// ------------------------------------ deleteHelper -----------------------------------------------
+
+// Description
+
+// deleteHelper: Helps free the memory recursively
+// preconditions: n/a
+// postconditions: Helps free the memory recursively
+
+// --------------------------------------------------------------------------------------------
+void MovieDB::deleteHelper(MovieHeadNode* curr) {
+    if (curr != nullptr) {
+        deleteHelper(curr->left);
+        deleteHelper(curr->right);
+        delete curr;
+    }
 }
 
+// ------------------------------------ insert -----------------------------------------------
+
+// Description
+
+// insert: Inserts the MovieHeadNode into a given root (op)
+// preconditions: n/a
+// postconditions: Inserts the MovieHeadNode into a given root
+
+// --------------------------------------------------------------------------------------------
 void MovieDB::insert(string op, MovieHeadNode *&target) {
     MovieHeadNode* curr;
     if (op == "F") {
@@ -34,7 +87,6 @@ void MovieDB::insert(string op, MovieHeadNode *&target) {
             return;
         } else {
             curr = funnyRoot;
-//            insertHelper(*funnyRoot, target);
         }
     } else if (op == "D") {
         if (dramaRoot == nullptr) {
@@ -42,16 +94,13 @@ void MovieDB::insert(string op, MovieHeadNode *&target) {
             return;
         } else {
             curr = dramaRoot;
-//            insertHelper(*dramaRoot, target);
         }
     } else if (op == "C") {
-//        cout << *target << endl;
         if (classicRoot == nullptr) {
             classicRoot = target;
             return;
         } else {
             curr = classicRoot;
-//            insertHelper(*classicRoot, target);
         }
     } else {
         cout << "Invalid Genre Error - Must Be (F) Funny / (C) Classic / (D) Drama" << endl;
@@ -80,30 +129,15 @@ void MovieDB::insert(string op, MovieHeadNode *&target) {
     }
 }
 
-void MovieDB::insertHelper(MovieHeadNode& curr, MovieHeadNode *&target) {
-//    MovieHeadNode* cur = classicRoot;
-//    MovieHeadNode& c = curr;
-//
-//    if (curr != nullptr) {
-//        if (*curr == target) {
-//            curr->totalStock += target->totalStock;
-////            delete target; needed?
-//        } else if (target < curr) {
-//            if (curr->left == nullptr) {
-//                curr->left = target;
-//            } else {
-//                insertHelper(curr->left, target);
-//            }
-//        } else if (target > curr) {
-//            if (curr->right == nullptr) {
-//                curr->right = target;
-//            } else {
-//                insertHelper(curr->right, target);
-//            }
-//        }
-//    }
-}
+// ------------------------------------ display -----------------------------------------------
 
+// Description
+
+// display: Writes the whole MovieDB contents to console
+// preconditions: n/a
+// postconditions: Writes the whole MovieDB contents to console
+
+// --------------------------------------------------------------------------------------------
 void MovieDB::display() const {
     cout << "Comedy Root: " << endl;
     displayHelper(funnyRoot);
@@ -116,44 +150,75 @@ void MovieDB::display() const {
     cout << endl;
 }
 
+// ------------------------------------ displayHelper -----------------------------------------------
+
+// Description
+
+// displayHelper: Helps write the display recursively to console
+// preconditions: n/a
+// postconditions: Helps write the display recursively to console
+
+// --------------------------------------------------------------------------------------------
 void MovieDB::displayHelper(MovieHeadNode* curr) const {
     if (curr != nullptr) {
         displayHelper(curr->left);
-//        cout << *curr << endl;
         curr->display();
-//        cout << *curr << endl;
         displayHelper(curr->right);
     }
 }
 
-bool MovieDB::retrieve(string op, string director, MovieHeadNode*& pos) {
-    MovieHeadNode* current;
-    if (op == "C") {
-        current = this->classicRoot;
-    } else if (op == "D") {
-        current = this->dramaRoot;
-    } else if (op == "F") {
-        current = this->funnyRoot;
-    } else {
-        return false;
-    }
+// ------------------------------------ operator<< -----------------------------------------------
 
-    while (current != nullptr) {
-        if (current->director == director) {
-            pos = current;
-            return true;
-        } else if (current->director < director) {
-            current = current->right;
-        } else if (current->director > director) {
-            current = current->left;
-        }
-    }
-    return false;
-}
+// Description
 
+// operator<<: Writes the contents of MovieDB to console
+// preconditions: n/a
+// postconditions: Writes the contents of MovieDB to console
+
+// --------------------------------------------------------------------------------------------
 ostream &operator<<(ostream &Out, const MovieDB &M) {
     M.display();
     return Out;
 }
 
 
+// ------------------------------------ retrieve -----------------------------------------------
+
+// Description
+
+// retrieve: retrieves the MovieHeadNode from movieDB given precondition information
+// preconditions:
+// pos is changed if target is found
+// For comedy movie retrival (type=F): input1 is year, input2 is title
+// For drama movie retrival (type=D): input1 is director, input2 is title
+// For classic movie retrival (type=C): input1 is year("date"), input2 is majorActor
+// postconditions: retrieves the MovieHeadNode from movieDB given precondition informationn
+
+// --------------------------------------------------------------------------------------------
+void MovieDB::retrieve(string type, string input1, string input2, MovieHeadNode*& curr, MovieHeadNode*& pos) {
+    if (curr != nullptr) {
+        if (type == "F") {
+            MovieNode* currentData = curr->data;
+            if (currentData->year == input1 && currentData->title == input2) {
+                pos = curr;
+            }
+        }
+
+        if (type == "D") {
+            MovieNode* currentData = curr->data;
+            if (curr->director == input1 && currentData->title == input2) {
+                pos = curr;
+            }
+        }
+
+        if (type == "C") {
+            ClassicNode* currentData = dynamic_cast<ClassicNode*>(curr->data);
+            if (currentData->year == input1 && currentData->majorActor == input2) {
+                pos = curr;
+            }
+        }
+
+        retrieve(type, input1, input2, curr->left, pos);
+        retrieve(type, input1, input2, curr->right, pos);
+    }
+}

@@ -12,80 +12,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f41d59a2-ec1a-411e-9446-ce57ced3ab77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program 4.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program 4.vcxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Program 4.vcxproj.filters" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/query/client-MicrosoftVS/query.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/cache-v2-0215388742b41ecc7bc4.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/cmakeFiles-v1-ce054dc330a43ac94057.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/codemodel-v2-96e7980a36e450513a34.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/index-2020-03-05T08-39-33-0088.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/.cmake/api/v1/reply/target-ASS4-Debug-924113aa652bb1fbaf17.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CMakeRCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/3.15.19101501-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/foo.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/ShowIncludes/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/VSInheritEnvironments.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/build.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/build/x64-Debug/rules.ninja" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Program 4.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Program 4.vcxproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Program 4.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classic.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Classic.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classic.h" beforeDir="false" afterPath="$PROJECT_DIR$/Classic.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassicNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ClassicNode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassicNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/ClassicNode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comedy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Comedy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comedy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Comedy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drama.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Drama.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drama.h" beforeDir="false" afterPath="$PROJECT_DIR$/Drama.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HashTable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HashTable.h" beforeDir="false" afterPath="$PROJECT_DIR$/HashTable.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Movie.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieDB.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MovieDB.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieDB.h" beforeDir="false" afterPath="$PROJECT_DIR$/MovieDB.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieHeadNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MovieHeadNode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MovieHeadNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/MovieHeadNode.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieNode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/MovieNode.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MovieNode.h" beforeDir="false" afterPath="$PROJECT_DIR$/MovieNode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program 4.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program 4.vcxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program 4.vcxproj.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/User.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User.h" beforeDir="false" afterPath="$PROJECT_DIR$/User.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ASS4.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ASS4.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/Classic.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/ClassicNode.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/Comedy.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ASS4.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ASS4.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ASS4.ilk" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ASS4.ilk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ASS4.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ASS4.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/Drama.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/HashTable.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/Movie.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/MovieDB.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/MovieHeadNode.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/MovieNode.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/User.cpp.obj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/embed.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/intermediate.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/manifest.rc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/manifest.res" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/vc140.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ASS4.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -171,7 +136,9 @@
       <workItem from="1583306837808" duration="16454000" />
       <workItem from="1583616147662" duration="4081000" />
       <workItem from="1583714381279" duration="612000" />
-      <workItem from="1583715633297" duration="296000" />
+      <workItem from="1583715633297" duration="14222000" />
+      <workItem from="1584147820633" duration="1984000" />
+      <workItem from="1584151509148" duration="10215000" />
     </task>
     <servers />
   </component>
@@ -183,7 +150,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

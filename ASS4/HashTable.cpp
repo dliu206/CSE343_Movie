@@ -1,14 +1,38 @@
 //
-// Created by david on 2/22/2020.
-//
 
+// ----------------------------------------- HashTable.cpp ------------------------------------------------------
+
+// CSS 343 C - Implementation Group 1
+// David Liu
+// Gabe Acuna
+
+// 3/13/2020
+
+// ----------------------------------------- File Description ----------------------------------------------------------
+
+// The following file shows the implementation of Hash Table
+
+// ------------------------------------------- Assumptions -------------------------------------------------------------
+
+// N/A
+
+// --------------------------------------------------------------------------------------------------------------------
 #include "HashTable.h"
 
 
+// ------------------------------------ Constructor -----------------------------------------------
+
+// Description
+
+// Constructor: initializes the Hash Table with size 10
+// preconditions: n/a
+// postconditions: initializes the Hash Table with size 10
+
+// --------------------------------------------------------------------------------------------
 HashTable::HashTable() {
     this->n = 0;
     this->size = 10;
-    this->data = new User * [10];
+    this->data = new User *[10];
 
     for (int a = 0; a < 10; a++) {
         User* temp = new User;
@@ -16,7 +40,16 @@ HashTable::HashTable() {
     }
 }
 
-// DO
+
+// ------------------------------------ Deconstructor -----------------------------------------------
+
+// Description
+
+// Deconstructor: Frees memory used by the Hash Table
+// preconditions: n/a
+// postconditions: Frees memory used by the Hash Table
+
+// --------------------------------------------------------------------------------------------
 HashTable::~HashTable() {
     for (int a = 0; a < this->size; a++) {
         delete data[a];
@@ -26,10 +59,16 @@ HashTable::~HashTable() {
     data = nullptr;
 }
 
-void HashTable::build(string fileName) {
-    //HashTable* table = new HashTable;
+// ------------------------------------ build -----------------------------------------------
 
-    //ifstream infile("data4customers.txt");
+// Description
+
+// build: Stores values into the Hash Table given specificly styled lines specified in prog4_2020.pdf
+// preconditions: n/a
+// postconditions: Stores values into the Hash Table given specificly styled lines specified in prog4_2020.pdf
+
+// --------------------------------------------------------------------------------------------
+void HashTable::build(string fileName) {
     ifstream infile(fileName);
 
     if (!infile) {
@@ -46,7 +85,6 @@ void HashTable::build(string fileName) {
             int id = stoi(s.substr(0, index));
             string name = s.substr(index + 1, s.length());
 
-            cout << s << endl;
             if (containsKey(id)) {
                 cout << "Duplicate customer ID: " << id << endl;
             }
@@ -61,26 +99,16 @@ void HashTable::build(string fileName) {
     }
 }
 
-User* HashTable::get(int key) {
-    int index = 0;
-    int hashCode = getHashKey(key, this->size);
-    while (true) {
-        if (index >= this->size) {
-            return nullptr;
-        }
-        if (data[(hashCode + index) % this->size]->id == key) {
-            return data[(hashCode + index) % this->size];
-        }
-        else if (data[(hashCode + index) % this->size] == nullptr) {
-            return nullptr;
-        }
-        else {
-            index++;
-        }
-    }
-}
+// ------------------------------------ retrieve -----------------------------------------------
 
-User* HashTable::retrieve(int key, User*& U) {
+// Description
+
+// retrieve: retrieves the specific User within a Hash Table
+// preconditions: n/a
+// postconditions: retrieves the specific User within a Hash Table
+
+// --------------------------------------------------------------------------------------------
+bool HashTable::retrieve(int key, User*& U) {
     int hashCode = getHashKey(key, this->size);
     int index = 0;
     while (true) {
@@ -89,17 +117,27 @@ User* HashTable::retrieve(int key, User*& U) {
         }
         if (data[(hashCode + index) % (this->size)]->id == key) {
             U = data[(hashCode + index) % (this->size)];
-            return U;
+            return true;
         }
         else if (data[(hashCode + index) % (this->size)]->isEmpty()) {
-            return U;
+            return false;
         }
         else {
             index++;
         }
     }
+    return false;
 }
 
+// ------------------------------------ put -----------------------------------------------
+
+// Description
+
+// put: Inserts a user into the Hash Table using linear probing. Resize is load factor >= 0.5
+// preconditions: n/a
+// postconditions: Inserts a user into the Hash Table
+
+// --------------------------------------------------------------------------------------------
 void HashTable::put(User* u) {
     if (this->n / this->size >= 0.5) {
         //resize
@@ -119,9 +157,7 @@ void HashTable::put(User* u) {
                         break;
                     }
                     if (temp[(hashCode + index) % (this->size * 2)]->isEmpty()) {
-                        //                        delete temp[(hashCode + index) % (this->size * 2)];
                         temp[(hashCode + index) % (this->size * 2)] = data[a];
-                        //                        delete data[a];
                         break;
                     }
                     else {
@@ -130,10 +166,8 @@ void HashTable::put(User* u) {
                 }
             }
             else {
-                //                delete this->data[a];
             }
         }
-        //        delete[] data;
         this->size *= 2;
         this->data = temp;
     }
@@ -150,7 +184,6 @@ void HashTable::put(User* u) {
         }
         if (data[(hashCode + index) % this->size]->isEmpty()) {
             this->n++;
-            //            delete data[(hashCode + index) % this->size];
             data[(hashCode + index) % this->size] = u;
             break;
         }
@@ -160,12 +193,28 @@ void HashTable::put(User* u) {
     }
 }
 
-// pre: Takes in integer User id and integer Hashmap size
-// post: Returns integer hash key, or array-index, of the specified User id
+// ------------------------------------ getHashKey -----------------------------------------------
+
+// Description
+
+// getHashKey: generates a hashkey given an id and table size
+// preconditions: n/a
+// postconditions: generates a hashkey given an id and table size
+
+// --------------------------------------------------------------------------------------------
 int HashTable::getHashKey(int id, int size) {
     return id % size;
 }
 
+// ------------------------------------ containsKey -----------------------------------------------
+
+// Description
+
+// containsKey: Returns T/F if the key is in the Hash Table
+// preconditions: n/a
+// postconditions: Returns T/F if the key is in the Hash Table
+
+// --------------------------------------------------------------------------------------------
 bool HashTable::containsKey(int key) {
     int index = 0;
     int hashCode = getHashKey(key, this->size);
@@ -183,16 +232,22 @@ bool HashTable::containsKey(int key) {
             index++;
         }
     }
+    return false;
 }
 
-int HashTable::getSize() {
-    return this->size;
-}
+// ------------------------------------ display -----------------------------------------------
 
+// Description
+
+// display: Writes to console each user in the HashTable
+// preconditions: n/a
+// postconditions: Writes to console each user in the HashTable
+
+// --------------------------------------------------------------------------------------------
 void HashTable::display() {
     for (int a = 0; a < this->size; a++) {
         if (data[a] != nullptr && !data[a]->isEmpty()) {
-            cout << *data[a] << endl;
+            data[a]->display();
         }
     }
 }

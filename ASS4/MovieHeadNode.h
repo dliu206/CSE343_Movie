@@ -1,21 +1,43 @@
 //
-// Created by david on 2/14/2020.
-//
 
+// ----------------------------------------- MovieHeadNode.h ------------------------------------------------------
+
+// CSS 343 C - Implementation Group 1
+// David Liu
+// Gabe Acuna
+
+// 3/13/2020
+
+// ----------------------------------------- File Description ----------------------------------------------------------
+
+// The following file shows the interface to Movie Head Node
+
+// ------------------------------------------- Assumptions -------------------------------------------------------------
+
+// N/A
+
+// --------------------------------------------------------------------------------------------------------------------
 #ifndef ASS4_MOVIEHEADNODE_H
 #define ASS4_MOVIEHEADNODE_H
 
 
 #include "MovieNode.h"
 #include "ClassicNode.h"
-#include <set>
 
 class MovieHeadNode {
     friend ostream &operator<<(ostream &Out, const MovieHeadNode &M);
 public:
-    virtual bool retrieve(string title, string year, string majorActor, MovieNode*&) = 0;
-    void display();
+    MovieHeadNode();
     ~MovieHeadNode();
+    // sets director and total stock
+    void setAttributes(string director, int totalStock);
+    // inserts movie node into temp;
+    virtual void insert(MovieNode* temp);
+    // retrieves the movie node
+    bool retrieve(string title, string year, string majorActor, MovieNode*&);
+    // displays the data
+    void display();
+
     string director;
     int totalStock;
     MovieNode* data;
@@ -26,18 +48,6 @@ public:
     bool operator!=(const MovieHeadNode &M) const;
     bool operator<(const MovieHeadNode &M) const;
     bool operator>(const MovieHeadNode &M) const;
-
-    //    virtual void insert(ClassicNode *temp);
-//    virtual bool retrieve(const string director, MovieNode*& pos);
-
-
-//    bool retrieve(const string title, string year, MovieNode *&pos);
-    virtual void insert(MovieNode* temp);
-
-//    virtual void makeMHN(string director, int totalStock);
-//    MovieHeadNode();
-//    MovieHeadNode(string director, int totalStock);
-    void setAttributes(string director, int totalStock);
 };
 
 

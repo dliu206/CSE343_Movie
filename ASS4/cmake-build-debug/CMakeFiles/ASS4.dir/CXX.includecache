@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/david/Desktop/CSE343_Movie/ASS4/ClassicNode.h
+MovieNode.h
+C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieNode.h
+
+C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieNode.h
+string
+-
+
+C:/Users/david/Desktop/CSE343_Movie/ASS4/User.cpp
+iostream
+-
+User.h
+C:/Users/david/Desktop/CSE343_Movie/ASS4/User.h
+ClassicNode.h
+C:/Users/david/Desktop/CSE343_Movie/ASS4/ClassicNode.h
+
+C:/Users/david/Desktop/CSE343_Movie/ASS4/User.h
+string
+-
+MovieNode.h
+C:/Users/david/Desktop/CSE343_Movie/ASS4/MovieNode.h
+

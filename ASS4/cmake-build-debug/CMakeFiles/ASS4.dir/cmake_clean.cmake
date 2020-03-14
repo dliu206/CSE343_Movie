@@ -8,7 +8,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ASS4.dir/Comedy.cpp.obj"
   "CMakeFiles/ASS4.dir/Drama.cpp.obj"
   "CMakeFiles/ASS4.dir/HashTable.cpp.obj"
-  "CMakeFiles/ASS4.dir/Movie.cpp.obj"
   "CMakeFiles/ASS4.dir/MovieDB.cpp.obj"
   "CMakeFiles/ASS4.dir/MovieHeadNode.cpp.obj"
   "CMakeFiles/ASS4.dir/MovieNode.cpp.obj"
